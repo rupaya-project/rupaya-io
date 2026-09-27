@@ -1,7 +1,10 @@
 import { Header, Footer } from "@/components/site-chrome";
 
 export const metadata = {
-  title: "Pivot statement — Rupaya",
+  title: "Pivot statement",
+  description:
+    "Rupaya is rebuilding RUPX as the reputation bond for autonomous AI agents on Base — skin in the game where x402 and ERC-8004 deliberately don't provide it.",
+  alternates: { canonical: "/pivot-statement" },
 };
 
 export default function PivotStatement() {

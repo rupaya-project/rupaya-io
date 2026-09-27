@@ -1,7 +1,10 @@
 import { Header, Footer } from "@/components/site-chrome";
 
 export const metadata = {
-  title: "Sunset notice — Rupaya",
+  title: "Sunset notice",
+  description:
+    "Rupaya is retiring three generations of its own blockchain and legacy RUPX contracts. No swap, no claims process, no implied continuity.",
+  alternates: { canonical: "/sunset-notice" },
 };
 
 export default function SunsetNotice() {
