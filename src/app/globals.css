@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0e1116;
+  --ink-raised: #14181f;
+  --paper: #e8e3d8;
+  --paper-dim: #b7b2a4;
+  --brass: #b08d4f;
+  --rust: #8b3a2f;
+  --slate: #2c3138;
+  --mist: #9ca3ac;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-raised: var(--ink-raised);
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-brass: var(--brass);
+  --color-rust: var(--rust);
+  --color-slate: var(--slate);
+  --color-mist: var(--mist);
+  --font-serif: var(--font-source-serif);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-brand: var(--font-bricolage);
+}
+
+* {
+  border-color: var(--slate);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-source-serif), serif;
+}
+
+.rule {
+  border-top: 1px solid var(--slate);
+}
+
+.rule-b {
+  border-bottom: 1px solid var(--slate);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .seal {
+    animation: seal-in 0.6s ease-out;
+  }
+}
+
+@keyframes seal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
